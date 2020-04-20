@@ -17,7 +17,7 @@ class Menu extends Phaser.Scene
         // menu display
         let menuConfig = {
             fontFamily: 'Courier',
-            fontSize: '28px',
+            fontSize: '24px',
             backgroundColor: '#F3B141',
             color: '#843605',
             align: 'right',
@@ -33,10 +33,12 @@ class Menu extends Phaser.Scene
         let textSpacer = 64;
 
         this.add.text(centerX, centerY - textSpacer, 'ROCKET PATROL', menuConfig).setOrigin(0.5);
-        this.add.text(centerX, centerY, 'Use ← → arrows to move & (F) to Fire', menuConfig).setOrigin(0.5);
+        this.add.text(centerX, centerY, 'P1 Use the mouse to move and (LMB) to Fire', menuConfig).setOrigin(0.5);
+        this.add.text(centerX, centerY + textSpacer, 'P2 control ships with Q W E', menuConfig).setOrigin(0.5);
         menuConfig.backgroundColor = '#00FF00';
         menuConfig.color = '#000';
-        this.add.text(centerX, centerY + textSpacer, 'Press ← for Easy or → for Hard', menuConfig).setOrigin(0.5);
+        this.add.text(centerX, centerY + textSpacer + textSpacer, 'Press ← for Easy or → for Hard', menuConfig).setOrigin(0.5);
+        
         
         //launch the next scene
         //this.scene.start("playScene");

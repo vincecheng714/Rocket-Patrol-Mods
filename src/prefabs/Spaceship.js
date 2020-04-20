@@ -51,15 +51,15 @@ class Spaceship extends Phaser.GameObjects.Sprite
       {
           if (this.y == 132)
           {
-            p2Score += 3;         
+            p2Score += 10;         
             this.reset();
           } else if (this.y == 196)
           {
-            p2Score += 5;           
+            p2Score += 15;           
             this.reset();
           } else if (this.y == 260)
           {
-            p2Score += 10;
+            p2Score += 20;
             this.reset();
           }
           //Play.updateScores();
